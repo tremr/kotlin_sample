@@ -6,7 +6,7 @@ fun findSumOfTwo(list: List<Int>, number: Int): Pair<Int, Int>
 		
 	sorted_list.sortWith(compareBy(Pair::second))
 	
-	for (i in sorted_list.size - 1)
+	for (i in 0 until sorted_list.size - 1)
 	{
 		val first_value  = sorted_list[i]
 		val second_value = sorted_list[i + 1]
